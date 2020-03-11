@@ -59,7 +59,7 @@ return {
       "kind": "LocalArgument",
       "name": "sort",
       "type": "String",
-      "defaultValue": "-decayed_merch"
+      "defaultValue": null
     }
   ],
   "selections": [
@@ -158,5 +158,5 @@ return {
   ]
 };
 })();
-(node as any).hash = 'bc1cfff22a04c7110466e2cbb918fa8d';
+(node as any).hash = '722edee4f9217ca9e43d732b9b054fb5';
 export default node;

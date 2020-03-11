@@ -56,7 +56,7 @@ fragment CollectionHeader_collection on MarketingCollection {
 fragment CollectionArtworks_collection on MarketingCollection {
   slug
   id
-  collectionArtworks: artworksConnection(sort: "-decayed_merch", first: 6) {
+  collectionArtworks: artworksConnection(first: 6) {
     edges {
       node {
         id
@@ -217,8 +217,7 @@ v6 = [
     "kind": "Literal",
     "name": "first",
     "value": 6
-  },
-  (v5/*: any*/)
+  }
 ],
 v7 = {
   "kind": "ScalarField",
@@ -372,7 +371,7 @@ return {
             "kind": "LinkedField",
             "alias": "collectionArtworks",
             "name": "artworksConnection",
-            "storageKey": "artworksConnection(first:6,sort:\"-decayed_merch\")",
+            "storageKey": "artworksConnection(first:6)",
             "args": (v6/*: any*/),
             "concreteType": "FilterArtworksConnection",
             "plural": false,
@@ -766,7 +765,7 @@ return {
   "params": {
     "operationKind": "query",
     "name": "QueryRenderersCollectionQuery",
-    "id": "012bff8627775a5d6ac5ef306c6aaef1",
+    "id": "6a33435486dde885d6ddfa31b4e38215",
     "text": null,
     "metadata": {}
   }
